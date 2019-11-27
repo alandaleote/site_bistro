@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="meuestilo.css">
+        <title>Porto Paris Bistrô</title>
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Início</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fotos.html">Fotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promo.html">Promoções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chegar.html">Como Chegar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contato
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="reserva.html">Reservas</a>
+                        <a class="dropdown-item" href="contato.html">Fale Conosco</a>
+                        <a class="dropdown-item" href="trabalhe.html">Trabalhe Conosco</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Delivery
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" target="blanck" href="https://www.ifood.com.br/delivery/porto-alegre-rs/porto-paris-bistro-porto-alegre-praia-de-belas/70c19330-95d4-46a8-b6a9-9aa01f4e7873">IFood</a>
+                        <a class="dropdown-item" target="blanck" href="https://www.ubereats.com/pt-BR/porto-alegre/food-delivery/porto-paris-bistro/W8w70_6aRx6MMl479BYXcg/">UberEats</a>
+                        <a class="dropdown-item" target="blanck" href="https://www.rappi.com.br/?gclid=cjwkcaiazupubraieiwakkmosmnpr_md6rb6z-fus4eokqv11chfyb4_6lckzbq1tv-4b6blsxgahboc1icqavd_bwe">Rappi</a>
+                        </div>
+                    </li>
+                </ul>
+                <nav class="redes">
+                    <ul>
+                        <li><a href="https://www.facebook.com/PortoParisBistroPoa/?ref=br_rs" target="_blank"><img src="img/facebook.png" width="30" height="30" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/portoparisbistropoa/?igshid=1jyn9545y796w&fbclid=IwAR1htj9MzmZV_7YYXZmupxucHLeIRvQGxpvMxuBPyZI2Dtv4byxHKNIhSfM" target="_blank"><img src="img/instagram.png" width="30" height="30" alt="Instagram"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+
+
+        <div id="tudo" class="d-flex flex-column justify-content-center">
+            <div id="formbox" class="container">
+                <div id="titulo">
+                    <h1>Trabalhe Conosco </h1><br><br>
+                    <p>VENHA FAZER PARTE DA NOSSA EQUIPE!! </p><br>
+                    <p>Preencha os campos abaixo e anexe seu currículo para que nosso time de recrutamento e seleção entre em contato com você. </p>
+                </div>
+
+                <form id="curriculo" autocomplete="off" action="dados.php" method="post">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend><br>
+                        <label for="nome">Nome Completo: </label><br>
+                        <input type="text" name="nome" id="nome" size="25" required autofocus>
+                        <br><br>
+                        <label for="tel">Telefone: </label><br>
+                        <input type="tel" name="tel" id="tel" size='25' maxlength="15" required>
+                        <br><br>
+                        <label for="gmail">E-mail: </label><br>
+                        <input type="email" name="e-mail" id="gmail" size='25' required placeholder="Apenas e-mail válido">
+                        <br><br>   
+                        <label for="site">URL Site Pessoal: </label><br>
+                        <input type="url" name="site" id="site" size='25'>
+                        <br><br>                                             
+                    </fieldset>
+                    <br><br> 
+                    <fieldset>
+                        <legend>Dados Profissionais</legend><br>     
+                        <label for="formacao">Formação: </label><br>
+                        <input list="lista" name="formacao" id="formacao" size="25">
+                        <datalist id="lista">
+                            <option value="Ensino Fundamental">Ensino Fundamental </option>
+                            <option value="Ensino Médio">Ensino Médio </option>>
+                            <option value="Ensino Superior">Ensino Superior </option>
+                            <option value="Especialização">Especialização </option>
+                        </datalist>
+                        <br><br>
+                        <label for="hist">Breve Histórico Profissional:</label><br>
+                        <textarea id="hist" name="hist" cols="70" rows="15" maxlength="500"></textarea>
+                        <br><br>
+                        <label for="cv">Upload do Currículo:</label><br>
+                        <input type="file" name="cv" id="cv">
+                        <br><br>
+                        <label for="areas">Áreas de Interesse: </label><br>
+                        <input type="checkbox" name="areas" id="ck1" value="adm">
+                        <label for="ck1">Administrativo </label><br>
+                        <input type="checkbox" name="areas" id="ck2" value="atend">
+                        <label for="ck2">Atendimento </label><br>
+                        <input type="checkbox" name="areas" id="ck3" value="coz">
+                        <label for="ck3">Cozinha </label>
+                        <br><br>                        
+                        <label for="dhoras">Disponibilidade de horas semanais:</label>
+                        <input type="number" name="dhoras" id="dhoras" min="20" max="44" step="4">
+                        <br>
+                    </fieldset>
+                    <br><br>
+                    <input type="submit" id="enviar" name="enviar" value="ENVIAR" size="7">
+                    <input type="reset" id="limpar" name="limpar" value="CANCELAR" size="7">                 
+                </form>
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

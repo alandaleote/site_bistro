@@ -1,0 +1,126 @@
+body{
+   
+    color: white;
+    font-family: Helvetica, Tahoma, Arial, sans-serif !important;
+    font-size: medium !important;
+	background-image: url("img/fundo.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+}
+
+div{
+    display: flex;
+}
+
+
+.nav-item{
+    width: max-content;
+}
+
+.redes {
+    width: 100%;
+    text-align: right;
+}
+
+
+.redes ul li {
+    text-transform: uppercase;
+    list-style-type: none;
+    display: inline;
+}
+
+@media only screen and (min-width: 450px)
+and (max-width: 769px){
+     
+     .redes {
+         
+         float: right;
+     }
+}
+@media only screen and (min-width: 769px) {
+  
+     .redes {
+        
+         float: right;
+         margin-right: 0%;
+         text-align: right;
+     }
+}
+
+div #tudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    flex-direction: column;
+    display: inline;
+    width: 70%;
+}
+
+div #logo img{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    align-items: center;
+    position: relative;
+    max-width: 500px;
+}
+
+div #texto{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    max-width: 70%;
+    flex-direction: column;
+    position: relative;
+}
+
+div .container #titulo{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center; 
+}
+
+div#titulo p{
+    text-align: justify;
+}
+
+#carouselExampleSlidesOnly{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    position: relative;
+}
+
+.img-thumbnail {
+    max-height: 400px;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+div #formbox{
+    max-width: 50%;
+}
+
+article#promo{
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+img#proima{
+    width: 100%
+}
