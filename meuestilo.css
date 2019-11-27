@@ -126,5 +126,6 @@ div #formbox{
 }
 
 dt{
-    margin-top: 2rem;
+    margin: 5px;
+    margin-top: 15px;
 }
