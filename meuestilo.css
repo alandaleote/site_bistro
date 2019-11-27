@@ -115,12 +115,16 @@ div #formbox{
     max-width: 50%;
 }
 
-article#promo{
+.promo{
     justify-content: center;
     display: inline-flex;
     flex-direction: column;
 }
 
-img#proima{
+.proima{
     width: 100%
+}
+
+dt{
+    margin-top: 2rem;
 }
